@@ -134,6 +134,18 @@ These skills follow the universal **SKILL.md** format and work with any AI codin
 ## Installation
 
 To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Kiro CLI**, **Kiro IDE**, **Cursor**, **Antigravity**, **OpenCode**, or **AdaL**:
+### Option 0:
+
+# recreate base dirs
+mkdir -p .claude .gemini .codex .kiro .agents .adal
+
+# create RELATIVE symlinks (repo-friendly)
+ln -s ../.agent/skills/skills .claude/skills
+ln -s ../.agent/skills/skills .gemini/skills
+ln -s ../.agent/skills/skills .codex/skills
+ln -s ../.agent/skills/skills .kiro/skills
+ln -s ../.agent/skills/skills .agents/skills
+ln -s ../.agent/skills/skills .adal/skills
 
 ### Option A: npx (recommended)
 
@@ -600,3 +612,5 @@ claude-code, gemini-cli, codex-cli, antigravity, cursor, github-copilot, opencod
 agentic-skills, ai-coding, llm-tools, ai-agents, autonomous-coding, mcp,
 ai-developer-tools, ai-pair-programming, vibe-coding, skill, skills, SKILL.md, rules.md, CLAUDE.md, GEMINI.md, CURSOR.md
 ```
+
+

@@ -1,4 +1,4 @@
-# 🌌 Antigravity Awesome Skills: 950+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Infinity Skills: 950+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
 > **The Ultimate Collection of 950+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
@@ -10,21 +10,21 @@
 [![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-orange)](https://cursor.sh)
 [![Copilot](https://img.shields.io/badge/GitHub%20Copilot-VSCode-lightblue)](https://github.com/features/copilot)
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
-[![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills)
+[![Infinity Skills](https://img.shields.io/badge/Infinity%20Skills-950+-red)](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills)
 [![AdaL CLI](https://img.shields.io/badge/AdaL%20CLI-SylphAI-pink)](https://sylph.ai/)
 [![ASK Supported](https://img.shields.io/badge/ASK-Supported-blue)](https://github.com/yeasy/ask)
 [![Buy Me a Book](https://img.shields.io/badge/Buy%20me%20a-book-d13610?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/sickn33)
 
 If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **950 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Infinity Skills** is a curated, battle-tested library of **950 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
 - 🟢 **Codex CLI** (OpenAI)
 - 🟠 **Kiro CLI** (AWS)
 - 🟠 **Kiro IDE** (AWS)
-- 🔴 **Antigravity IDE** (Google DeepMind)
+- 🔴 **Antigravity IDE** (Google DeepMind) · **Infinity Skills** (this repo)
 - 🩵 **GitHub Copilot** (VSCode Extension)
 - 🟠 **Cursor** (AI-native IDE)
 - ⚪ **OpenCode** (Open-source CLI)
@@ -56,11 +56,11 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ## New Here? Start Here!
 
-**Welcome to the V6.5.0 Interactive Web Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Welcome to the Infinity Skills Interactive Web Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 6.5.0) is a massive upgrade to your AI's capabilities.
+**Infinity Skills** is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -122,7 +122,7 @@ These skills follow the universal **SKILL.md** format and work with any AI codin
 | **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`                                                       |
 
 > [!TIP]
-> **Default installer path**: `~/.gemini/antigravity/skills` (Antigravity global). Use `--path ~/.agent/skills` for workspace-specific install. For manual clone, `.agent/skills/` works as workspace path for Antigravity.
+> **Default installer path**: `~/.gemini/antigravity/skills` (Antigravity global). Use `--path ~/.agent/skills` for workspace-specific install. For manual clone, `.agent/skills/` works as workspace path for Antigravity and **Infinity Skills**.
 > **OpenCode Path Update**: opencode path is changed to `.agents/skills` for global skills. See [Place Files](https://opencode.ai/docs/skills/#place-files) directive on OpenCode Docs.
 
 > [!WARNING]
@@ -320,7 +320,7 @@ For detailed examples of how to actually use skills, see the [**Usage Guide**](d
 - Hardening production: `Security Developer` + `DevOps & Cloud` + `Observability & Monitoring`.
 - Shipping OSS changes: `Essentials` + `OSS Maintainer`.
 
-## Antigravity Workflows
+## Infinity Workflows
 
 Bundles help you choose skills. Workflows help you execute them in order.
 
@@ -432,7 +432,7 @@ We welcome contributions from the community! To add a new skill:
 5. **Run validation**: `npm run validate` (or `npm run validate:strict` for CI). Optionally run `python3 scripts/validate_references.py` if you touch workflows or bundles.
 6. **Submit a Pull Request**.
 
-Please ensure your skill follows the Antigravity/Claude Code best practices. Maintainers: see [docs/AUDIT.md](docs/AUDIT.md) for coherence checks and [.github/MAINTENANCE.md](.github/MAINTENANCE.md) for the full validation chain.
+Please ensure your skill follows the Infinity Skills / Claude Code best practices. Maintainers: see [docs/AUDIT.md](docs/AUDIT.md) for coherence checks and [.github/MAINTENANCE.md](.github/MAINTENANCE.md) for the full validation chain.
 
 ---
 
@@ -529,7 +529,7 @@ This collection would not be possible without the incredible work of the Claude 
 ## Repo Contributors
 
 <a href="https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sickn33/antigravity-awesome-skills" />
+  <img src="https://contrib.rocks/image?repo=Devulapellykushal/950skills" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
@@ -597,9 +597,9 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sickn33/antigravity-awesome-skills&type=date&legend=top-left)](https://www.star-history.com/#sickn33/antigravity-awesome-skills&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=Devulapellykushal/950skills&type=date&legend=top-left)](https://www.star-history.com/#Devulapellykushal/950skills&type=date&legend=top-left)
 
-If Antigravity Awesome Skills has been useful, consider ⭐ starring the repo or [buying me a book](https://buymeacoffee.com/sickn33).
+If **Infinity Skills** has been useful, consider ⭐ starring the repo or [buying me a book](https://buymeacoffee.com/sickn33).
 
 ---
 

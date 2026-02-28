@@ -36,7 +36,7 @@ This installs skills to `~/.kiro/skills/`
 
 ```bash
 # Clone directly to Kiro's skills directory
-git clone https://github.com/sickn33/antigravity-awesome-skills.git ~/.kiro/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git ~/.kiro/skills
 ```
 
 ### Verification
@@ -287,6 +287,6 @@ Found a Kiro-specific use case or workflow? Contribute to this guide:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/sickn33/antigravity-awesome-skills/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/sickn33/antigravity-awesome-skills/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/discussions)
 - **Community**: [Community Guidelines](COMMUNITY_GUIDELINES.md)

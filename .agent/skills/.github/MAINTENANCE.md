@@ -159,7 +159,7 @@ Locations to check:
 
 ### E. Badges & Links
 
-- **Antigravity Badge**: Must point to `https://github.com/sickn33/antigravity-awesome-skills`, NOT `anthropics/antigravity`.
+- **Antigravity Badge**: Must point to `https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills`, NOT `anthropics/antigravity`.
 - **License**: Ensure the link points to `LICENSE` file.
 
 ### F. Workflows Consistency (NEW in V5)

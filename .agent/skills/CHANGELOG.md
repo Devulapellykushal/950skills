@@ -876,7 +876,7 @@ Integrates the full official Microsoft skills collection (129 skills) and Google
 
 ### Changed
 
-- **Documentation**: Clarified in README.md and GETTING_STARTED.md that installation means cloning the full repo once; Starter Packs are curated lists to discover skills by role, not a different installation method (fixes [#44](https://github.com/sickn33/antigravity-awesome-skills/issues/44)).
+- **Documentation**: Clarified in README.md and GETTING_STARTED.md that installation means cloning the full repo once; Starter Packs are curated lists to discover skills by role, not a different installation method (fixes [#44](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues/44)).
 
 ### Registry
 

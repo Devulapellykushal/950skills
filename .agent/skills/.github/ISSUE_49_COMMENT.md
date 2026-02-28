@@ -1,4 +1,4 @@
-Suggested comment for [Issue #49](https://github.com/sickn33/antigravity-awesome-skills/issues/49). Paste this on the issue:
+Suggested comment for [Issue #49](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues/49). Paste this on the issue:
 
 ---
 

@@ -38,7 +38,7 @@ If you see a 404 error, use: `npx github:sickn33/antigravity-awesome-skills`
 
 ```bash
 # Universal (works for most agents)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agent/skills
 ```
 
 ### 2. Pick Your Persona

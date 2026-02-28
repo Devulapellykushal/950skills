@@ -1,6 +1,6 @@
 @echo off
 setlocal
-TITLE Antigravity Skills App
+TITLE Infinity Skills App
 
 echo ===================================================
 echo      Antigravity Awesome Skills - Web App
@@ -30,7 +30,7 @@ goto :USE_POWERSHELL
 git remote get-url upstream >nul 2>nul
 IF %ERRORLEVEL% EQU 0 goto :DO_FETCH
 echo [INFO] Adding upstream remote...
-git remote add upstream https://github.com/sickn33/antigravity-awesome-skills.git
+git remote add upstream https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git
 
 :DO_FETCH
 echo [INFO] Fetching latest skills from original repo...
@@ -62,7 +62,7 @@ if exist "update_temp" rmdir /S /Q "update_temp" >nul 2>nul
 if exist "update.zip" del "update.zip" >nul 2>nul
 
 :: Download the latest repository as ZIP
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/sickn33/antigravity-awesome-skills/archive/refs/heads/main.zip' -OutFile 'update.zip' -UseBasicParsing" >nul 2>nul
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/archive/refs/heads/main.zip' -OutFile 'update.zip' -UseBasicParsing" >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 goto :DOWNLOAD_FAIL
 
 :: Extract and update skills

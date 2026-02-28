@@ -5,7 +5,7 @@ const path = require("path");
 const fs = require("fs");
 const os = require("os");
 
-const REPO = "https://github.com/sickn33/antigravity-awesome-skills.git";
+const REPO = "https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git";
 const HOME = process.env.HOME || process.env.USERPROFILE || "";
 
 function resolveDir(p) {

@@ -299,7 +299,7 @@ Use @skill-creator to help me build a custom skill for [your task]
 
 1. Check the skill's SKILL.md file directly: `~/.agent/skills/[skill-name]/SKILL.md`
 2. Read the description to ensure you're using it correctly
-3. [Open an issue](https://github.com/sickn33/antigravity-awesome-skills/issues) with details
+3. [Open an issue](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues) with details
 
 ---
 
@@ -356,7 +356,7 @@ If something still doesn't make sense:
 
 1. Check the [FAQ](FAQ.md)
 2. See [Real-World Examples](EXAMPLES.md)
-3. [Open a Discussion](https://github.com/sickn33/antigravity-awesome-skills/discussions)
-4. [File an Issue](https://github.com/sickn33/antigravity-awesome-skills/issues) to help us improve this guide!
+3. [Open a Discussion](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/discussions)
+4. [File an Issue](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues) to help us improve this guide!
 
 Remember: You're not alone! The whole point of this project is to make AI assistants easier to use. If this guide didn't help, let us know so we can fix it. 🙌

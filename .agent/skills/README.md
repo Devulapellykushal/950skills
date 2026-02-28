@@ -10,7 +10,7 @@
 [![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-orange)](https://cursor.sh)
 [![Copilot](https://img.shields.io/badge/GitHub%20Copilot-VSCode-lightblue)](https://github.com/features/copilot)
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
-[![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/sickn33/antigravity-awesome-skills)
+[![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills)
 [![AdaL CLI](https://img.shields.io/badge/AdaL%20CLI-SylphAI-pink)](https://sylph.ai/)
 [![ASK Supported](https://img.shields.io/badge/ASK-Supported-blue)](https://github.com/yeasy/ask)
 [![Buy Me a Book](https://img.shields.io/badge/Buy%20me%20a-book-d13610?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/sickn33)
@@ -198,37 +198,37 @@ Without `--path`, the npx installer uses `~/.gemini/antigravity/skills`. For man
 
 ```bash
 # Antigravity global (matches npx default)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git ~/.gemini/antigravity/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git ~/.gemini/antigravity/skills
 
 # Workspace-specific (e.g. .agent/skills in your project)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agent/skills
 
 # Kiro CLI/IDE global
-git clone https://github.com/sickn33/antigravity-awesome-skills.git ~/.kiro/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git ~/.kiro/skills
 
 # Kiro CLI/IDE workspace
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .kiro/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .kiro/skills
 
 # Claude Code specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .claude/skills
 
 # Gemini CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .gemini/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .gemini/skills
 
 # Codex CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .codex/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .codex/skills
 
 # Kiro CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .kiro/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .kiro/skills
 
 # Cursor specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .cursor/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .cursor/skills
 
 # OpenCode
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agents/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agents/skills
 
 # AdaL CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .adal/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .adal/skills
 ```
 
 ### Option C: Kiro IDE Import (GUI)
@@ -237,8 +237,8 @@ For Kiro IDE users, you can import individual skills directly:
 
 1. Open **Agent Steering & Skills** panel in Kiro IDE
 2. Click **+** → **Import a skill** → **GitHub**
-3. Paste skill URL: `https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/[skill-name]`
-4. Example: `https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/aws-cost-optimizer`
+3. Paste skill URL: `https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/tree/main/skills/[skill-name]`
+4. Example: `https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/tree/main/skills/aws-cost-optimizer`
 
 > **Note**: This imports one skill at a time. For bulk installation, use Option A or B above.
 
@@ -259,7 +259,7 @@ npx github:sickn33/antigravity-awesome-skills
 This repository uses symlinks for official skills. Enable Developer Mode or run Git as Administrator, then clone with:
 
 ```bash
-git clone -c core.symlinks=true https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone -c core.symlinks=true https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agent/skills
 ```
 
 ### Skills installed but not detected by your tool
@@ -528,7 +528,7 @@ This collection would not be possible without the incredible work of the Claude 
 
 ## Repo Contributors
 
-<a href="https://github.com/sickn33/antigravity-awesome-skills/graphs/contributors">
+<a href="https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=sickn33/antigravity-awesome-skills" />
 </a>
 

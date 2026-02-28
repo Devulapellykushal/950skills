@@ -80,7 +80,7 @@ The universal path that works with most tools is `.agent/skills/`.
 **Using git clone:**
 
 ```bash
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agent/skills
 ```
 
 **Tool-specific paths:**
@@ -96,7 +96,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skill
 Run git with:
 
 ```bash
-git clone -c core.symlinks=true https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone -c core.symlinks=true https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills.git .agent/skills
 ```
 
 Or enable "Developer Mode" in Windows Settings.
@@ -152,7 +152,7 @@ Use the `@` symbol followed by the skill name:
 
 ### A skill gives incorrect or outdated advice
 
-Please [Open an issue](https://github.com/sickn33/antigravity-awesome-skills/issues)!
+Please [Open an issue](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/issues)!
 Include:
 
 - Which skill
@@ -193,4 +193,4 @@ V4 introduces automated quality control. Your skill might be missing:
 - Try `@test-driven-development` for better code quality
 - Explore `@skill-creator` to make your own skills
 
-**Still confused?** [Open a discussion](https://github.com/sickn33/antigravity-awesome-skills/discussions) and we'll help you out! 🙌
+**Still confused?** [Open a discussion](https://github.com/Devulapellykushal/950skills/tree/main/.agent/skills/discussions) and we'll help you out! 🙌

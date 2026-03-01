@@ -4,17 +4,27 @@
     "path": "skills/00-andruia-consultant",
     "category": "andruia",
     "name": "00-andruia-consultant",
-    "description": "Arquitecto de Soluciones Principal y Consultor Tecnol\u00f3gico de Andru.ia. Diagnostica y traza la hoja de ruta \u00f3ptima para proyectos de IA en espa\u00f1ol.",
+    "description": "Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español.",
     "risk": "safe",
     "source": "personal",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "10-andruia-skill-smith",
+    "path": "skills/10-andruia-skill-smith",
+    "category": "andruia",
+    "name": "10-andruia-skill-smith",
+    "description": "Andru.ia Systems Engineer. Designs, writes, and deploys new skills within the repository following the Diamond Standard.",
+    "risk": "official",
+    "source": "personal",
+    "date_added": null
   },
   {
     "id": "20-andruia-niche-intelligence",
     "path": "skills/20-andruia-niche-intelligence",
     "category": "andruia",
     "name": "20-andruia-niche-intelligence",
-    "description": "Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho espec\u00edfico de un proyecto para inyectar conocimientos, regulaciones y est\u00e1ndares \u00fanicos del sector. Act\u00edvalo tras definir el nicho.",
+    "description": "Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regulaciones y estándares únicos del sector. Actívalo tras definir el nicho.",
     "risk": "safe",
     "source": "personal",
     "date_added": "2026-02-27"
@@ -104,7 +114,7 @@
     "path": "skills/agent-evaluation",
     "category": "uncategorized",
     "name": "agent-evaluation",
-    "description": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring\u2014where even top agents achieve less than 50% on re...",
+    "description": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring—where even top agents achieve less than 50% on re...",
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)",
     "date_added": "2026-02-27"
@@ -378,6 +388,16 @@
     "risk": "safe",
     "source": "self",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "animation-interaction-designer",
+    "path": "skills/animation-interaction-designer",
+    "category": "uncategorized",
+    "name": "animation-interaction-designer",
+    "description": "Act as Motion Designer at Apple. Design interactions for website sections: load sequence, scroll, hover, click, gestures. Easing, durations, GPU tips, Figma Make–friendly copy.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "anti-reversing-techniques",
@@ -1184,7 +1204,7 @@
     "path": "skills/azure-cosmos-py",
     "category": "uncategorized",
     "name": "azure-cosmos-py",
-    "description": "Client library for Azure Cosmos DB NoSQL API \u2014 globally distributed, multi-model database.",
+    "description": "Client library for Azure Cosmos DB NoSQL API — globally distributed, multi-model database.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1194,7 +1214,7 @@
     "path": "skills/azure-cosmos-rust",
     "category": "uncategorized",
     "name": "azure-cosmos-rust",
-    "description": "Client library for Azure Cosmos DB NoSQL API \u2014 globally distributed, multi-model database.",
+    "description": "Client library for Azure Cosmos DB NoSQL API — globally distributed, multi-model database.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1204,7 +1224,7 @@
     "path": "skills/azure-cosmos-ts",
     "category": "uncategorized",
     "name": "azure-cosmos-ts",
-    "description": "Data plane SDK for Azure Cosmos DB NoSQL API operations \u2014 CRUD on documents, queries, bulk operations.",
+    "description": "Data plane SDK for Azure Cosmos DB NoSQL API operations — CRUD on documents, queries, bulk operations.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1294,7 +1314,7 @@
     "path": "skills/azure-eventhub-rust",
     "category": "uncategorized",
     "name": "azure-eventhub-rust",
-    "description": "Client library for Azure Event Hubs \u2014 big data streaming platform and event ingestion service.",
+    "description": "Client library for Azure Event Hubs — big data streaming platform and event ingestion service.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1374,7 +1394,7 @@
     "path": "skills/azure-keyvault-certificates-rust",
     "category": "uncategorized",
     "name": "azure-keyvault-certificates-rust",
-    "description": "Client library for Azure Key Vault Certificates \u2014 secure storage and management of certificates.",
+    "description": "Client library for Azure Key Vault Certificates — secure storage and management of certificates.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1384,7 +1404,7 @@
     "path": "skills/azure-keyvault-keys-rust",
     "category": "uncategorized",
     "name": "azure-keyvault-keys-rust",
-    "description": "Client library for Azure Key Vault Keys \u2014 secure storage and management of cryptographic keys.",
+    "description": "Client library for Azure Key Vault Keys — secure storage and management of cryptographic keys.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1414,7 +1434,7 @@
     "path": "skills/azure-keyvault-secrets-rust",
     "category": "uncategorized",
     "name": "azure-keyvault-secrets-rust",
-    "description": "Client library for Azure Key Vault Secrets \u2014 secure storage for passwords, API keys, and other secrets.",
+    "description": "Client library for Azure Key Vault Secrets — secure storage for passwords, API keys, and other secrets.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1614,7 +1634,7 @@
     "path": "skills/azure-monitor-opentelemetry-exporter-java",
     "category": "uncategorized",
     "name": "azure-monitor-opentelemetry-exporter-java",
-    "description": "> **\u26a0\ufe0f DEPRECATION NOTICE**: This package is deprecated. Migrate to `azure-monitor-opentelemetry-autoconfigure`. > > See [Migration Guide](https://github.com/Azure/azure-sdk-for-java/blob/main/sdk/monitor/azure-monitor-opentelemetry-exporter/MIGRATIO",
+    "description": "> **⚠️ DEPRECATION NOTICE**: This package is deprecated. Migrate to `azure-monitor-opentelemetry-autoconfigure`. > > See [Migration Guide](https://github.com/Azure/azure-sdk-for-java/blob/main/sdk/monitor/azure-monitor-opentelemetry-exporter/MIGRATIO",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1654,7 +1674,7 @@
     "path": "skills/azure-monitor-query-java",
     "category": "uncategorized",
     "name": "azure-monitor-query-java",
-    "description": "> **DEPRECATION NOTICE**: This package is deprecated in favor of: > - `azure-monitor-query-logs` \u2014 For Log Analytics queries > - `azure-monitor-query-metrics` \u2014 For metrics queries > > See migration guides: [Logs Migration](https://github.com/Azure/a",
+    "description": "> **DEPRECATION NOTICE**: This package is deprecated in favor of: > - `azure-monitor-query-logs` — For Log Analytics queries > - `azure-monitor-query-metrics` — For metrics queries > > See migration guides: [Logs Migration](https://github.com/Azure/a",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1864,7 +1884,7 @@
     "path": "skills/azure-storage-blob-py",
     "category": "uncategorized",
     "name": "azure-storage-blob-py",
-    "description": "Client library for Azure Blob Storage \u2014 object storage for unstructured data.",
+    "description": "Client library for Azure Blob Storage — object storage for unstructured data.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1874,7 +1894,7 @@
     "path": "skills/azure-storage-blob-rust",
     "category": "uncategorized",
     "name": "azure-storage-blob-rust",
-    "description": "Client library for Azure Blob Storage \u2014 Microsoft's object storage solution for the cloud.",
+    "description": "Client library for Azure Blob Storage — Microsoft's object storage solution for the cloud.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1884,7 +1904,7 @@
     "path": "skills/azure-storage-blob-ts",
     "category": "uncategorized",
     "name": "azure-storage-blob-ts",
-    "description": "SDK for Azure Blob Storage operations \u2014 upload, download, list, and manage blobs and containers.",
+    "description": "SDK for Azure Blob Storage operations — upload, download, list, and manage blobs and containers.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1914,7 +1934,7 @@
     "path": "skills/azure-storage-file-share-ts",
     "category": "uncategorized",
     "name": "azure-storage-file-share-ts",
-    "description": "SDK for Azure File Share operations \u2014 SMB file shares, directories, and file operations.",
+    "description": "SDK for Azure File Share operations — SMB file shares, directories, and file operations.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -1934,7 +1954,7 @@
     "path": "skills/azure-storage-queue-ts",
     "category": "uncategorized",
     "name": "azure-storage-queue-ts",
-    "description": "SDK for Azure Queue Storage operations \u2014 send, receive, peek, and manage messages in queues.",
+    "description": "SDK for Azure Queue Storage operations — send, receive, peek, and manage messages in queues.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -2208,6 +2228,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "brand-identity-creator",
+    "path": "skills/brand-identity-creator",
+    "category": "uncategorized",
+    "name": "brand-identity-creator",
+    "description": "Act as Creative Director at Pentagram. Build complete brand identity: strategy, 3 logo directions, color system, typography, imagery, applications, 20-page brand book.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "brevo-automation",
@@ -3340,6 +3370,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "data-integration-planner",
+    "path": "skills/data-integration-planner",
+    "category": "uncategorized",
+    "name": "data-integration-planner",
+    "description": "Act as Full-Stack Architect. Design data integration for a site: data models, API endpoints, auth, dynamic loading, forms, accounts, search. Supabase-friendly.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "data-quality-frameworks",
     "path": "skills/data-quality-frameworks",
     "category": "uncategorized",
@@ -3374,7 +3414,7 @@
     "path": "skills/data-structure-protocol",
     "category": "uncategorized",
     "name": "data-structure-protocol",
-    "description": "Give agents persistent structural memory of a codebase \u2014 navigate dependencies, track public APIs, and understand why connections exist without re-reading the whole repo.",
+    "description": "Give agents persistent structural memory of a codebase — navigate dependencies, track public APIs, and understand why connections exist without re-reading the whole repo.",
     "risk": "safe",
     "source": "https://github.com/k-kolomeitsev/data-structure-protocol",
     "date_added": "2026-02-27"
@@ -3660,6 +3700,26 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "design-accessibility-auditor",
+    "path": "skills/design-accessibility-auditor",
+    "category": "uncategorized",
+    "name": "design-accessibility-auditor",
+    "description": "Act as Apple Accessibility Specialist. Audit design against WCAG 2.2 AA: perceivable, operable, understandable, robust, mobile, cognitive. Pass/fail, violations, remediation.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "design-critique-partner",
+    "path": "skills/design-critique-partner",
+    "category": "uncategorized",
+    "name": "design-critique-partner",
+    "description": "Act as Apple Design Director. Critique design via Nielsen heuristics, hierarchy, accessibility; prioritized fixes and 2 alternative directions. Constructive, actionable.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "design-md",
     "path": "skills/design-md",
     "category": "uncategorized",
@@ -3678,6 +3738,26 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "design-to-code-translator",
+    "path": "skills/design-to-code-translator",
+    "category": "uncategorized",
+    "name": "design-to-code-translator",
+    "description": "Act as Vercel Design Engineer. Convert design to production frontend: component hierarchy, props, state, copy-paste code, responsive, a11y, tokens, dark mode, testing.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "design-trend-synthesizer",
+    "path": "skills/design-trend-synthesizer",
+    "category": "uncategorized",
+    "name": "design-trend-synthesizer",
+    "description": "Act as frog Design Researcher. Analyze 2026 trends: 5 macro trends, competitor 2×2, user shifts, platform evolution, roadmap, mood board specs. Cite real brands.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "development",
@@ -3828,6 +3908,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "docx",
+    "path": "skills/docx",
+    "category": "uncategorized",
+    "name": "docx",
+    "description": "Create, read, edit, and manipulate Word documents (.docx) with docx-js, pandoc, and XML. Use for reports, memos, templates, tracked changes, and comments.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "docx-official",
@@ -4250,6 +4340,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "figma-auto-layout-expert",
+    "path": "skills/figma-auto-layout-expert",
+    "category": "uncategorized",
+    "name": "figma-auto-layout-expert",
+    "description": "Act as Figma Design Ops Specialist. Convert design to Figma specs: frames, auto-layout, components/variants, tokens, prototype, dev handoff, accessibility.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "figma-automation",
     "path": "skills/figma-automation",
     "category": "uncategorized",
@@ -4434,7 +4534,7 @@
     "path": "skills/free-tool-strategy",
     "category": "uncategorized",
     "name": "free-tool-strategy",
-    "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes \u2014 lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as mar...",
+    "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as mar...",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -5880,6 +5980,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "marketing-asset-factory",
+    "path": "skills/marketing-asset-factory",
+    "category": "uncategorized",
+    "name": "marketing-asset-factory",
+    "description": "Act as Creative Director. Build full campaign asset library: paid ads, email sequences, landing copy, social, sales enablement, A/B tests, consistent messaging.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "marketing-ideas",
     "path": "skills/marketing-ideas",
     "category": "uncategorized",
@@ -6284,7 +6394,7 @@
     "path": "skills/nerdzao-elite-gemini-high",
     "category": "uncategorized",
     "name": "nerdzao-elite-gemini-high",
-    "description": "Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Workflow completo com foco em qualidade m\u00e1xima e efici\u00eancia de tokens.",
+    "description": "Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Workflow completo com foco em qualidade máxima e eficiência de tokens.",
     "risk": "safe",
     "source": "community",
     "date_added": "2026-02-27"
@@ -6660,6 +6770,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "pdf",
+    "path": "skills/pdf",
+    "category": "uncategorized",
+    "name": "pdf-official",
+    "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmaticall...",
+    "risk": "unknown",
+    "source": "community",
+    "date_added": "2026-02-27"
+  },
+  {
     "id": "pdf-official",
     "path": "skills/pdf-official",
     "category": "uncategorized",
@@ -6895,6 +7015,16 @@
     "category": "uncategorized",
     "name": "powershell-windows",
     "description": "PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling.",
+    "risk": "unknown",
+    "source": "community",
+    "date_added": "2026-02-27"
+  },
+  {
+    "id": "pptx",
+    "path": "skills/pptx",
+    "category": "uncategorized",
+    "name": "pptx-official",
+    "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layo...",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -7150,6 +7280,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "qa-optimization-checklist",
+    "path": "skills/qa-optimization-checklist",
+    "category": "uncategorized",
+    "name": "qa-optimization-checklist",
+    "description": "Act as QA Engineer at Google. Review website spec or Figma Make output: Core Web Vitals, WCAG 2.2 AA, SEO (meta, structured data), security, cross-browser.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "quality-nonconformance",
     "path": "skills/quality-nonconformance",
     "category": "uncategorized",
@@ -7398,6 +7538,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "responsive-behavior-strategist",
+    "path": "skills/responsive-behavior-strategist",
+    "category": "uncategorized",
+    "name": "responsive-behavior-strategist",
+    "description": "Act as Responsive Design Specialist. Plan breakpoints (375 / 768 / 1440) and layout transformations per section: grid→stack, sidebar→drawer, typography, touch targets.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "returns-reverse-logistics",
@@ -7744,7 +7894,7 @@
     "path": "skills/seo-audit",
     "category": "uncategorized",
     "name": "seo-audit",
-    "description": "You are an **SEO diagnostic specialist**. Your role is to **identify, explain, and prioritize SEO issues** that affect organic visibility\u2014**not to implement fixes unless explicitly requested**.",
+    "description": "You are an **SEO diagnostic specialist**. Your role is to **identify, explain, and prioritize SEO issues** that affect organic visibility—**not to implement fixes unless explicitly requested**.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -8544,7 +8694,7 @@
     "path": "skills/terraform-aws-modules",
     "category": "uncategorized",
     "name": "terraform-aws-modules",
-    "description": "Terraform module creation for AWS \u2014 reusable modules, state management, and HCL best practices. Use when building or reviewing Terraform AWS infrastructure.",
+    "description": "Terraform module creation for AWS — reusable modules, state management, and HCL best practices. Use when building or reviewing Terraform AWS infrastructure.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -8838,6 +8988,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "ui-ux-pattern-master",
+    "path": "skills/ui-ux-pattern-master",
+    "category": "uncategorized",
+    "name": "ui-ux-pattern-master",
+    "description": "Act as Senior Apple UI Designer. Design full UI per Apple HIG: hierarchy, 8 core screens, wireframes, components, states, accessibility, micro-interactions.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "ui-ux-pro-max",
@@ -9224,7 +9384,7 @@
     "path": "skills/wiki-onboarding",
     "category": "uncategorized",
     "name": "wiki-onboarding",
-    "description": "Generates two complementary onboarding guides \u2014 a Principal-Level architectural deep-dive and a Zero-to-Hero contributor walkthrough. Use when the user wants onboarding documentation fo...",
+    "description": "Generates two complementary onboarding guides — a Principal-Level architectural deep-dive and a Zero-to-Hero contributor walkthrough. Use when the user wants onboarding documentation fo...",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -9417,6 +9577,16 @@
     "description": "Publish articles to X/Twitter",
     "risk": "safe",
     "source": "https://github.com/wshuyi/x-article-publisher-skill",
+    "date_added": "2026-02-27"
+  },
+  {
+    "id": "xlsx",
+    "path": "skills/xlsx",
+    "category": "uncategorized",
+    "name": "xlsx-official",
+    "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, ....",
+    "risk": "unknown",
+    "source": "community",
     "date_added": "2026-02-27"
   },
   {

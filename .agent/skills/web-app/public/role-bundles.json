@@ -1,0 +1,58 @@
+{
+  "bundles": [
+    {
+      "id": "essentials",
+      "name": "Essentials",
+      "description": "Start here. Planning, linting, git, debugging.",
+      "skillIds": ["concise-planning", "lint-and-validate", "git-pushing", "kaizen", "systematic-debugging"]
+    },
+    {
+      "id": "web-wizard",
+      "name": "Web Wizard",
+      "description": "Modern web apps: React, Next.js, Tailwind, SEO.",
+      "skillIds": ["frontend-design", "react-best-practices", "react-patterns", "nextjs-best-practices", "tailwind-patterns", "form-cro", "seo-audit"]
+    },
+    {
+      "id": "web-designer",
+      "name": "Web Designer",
+      "description": "Pixel-perfect UI, 3D, mobile, scroll experiences.",
+      "skillIds": ["ui-ux-pro-max", "frontend-design", "3d-web-experience", "canvas-design", "mobile-design", "scroll-experience"]
+    },
+    {
+      "id": "fullstack",
+      "name": "Full-Stack Developer",
+      "description": "End-to-end web: frontend, backend, API, DB, payments.",
+      "skillIds": ["senior-fullstack", "frontend-developer", "backend-dev-guidelines", "api-patterns", "database-design", "stripe-integration"]
+    },
+    {
+      "id": "security-engineer",
+      "name": "Security Engineer",
+      "description": "Pentesting, auditing, vulnerability scanning.",
+      "skillIds": ["ethical-hacking-methodology", "burp-suite-testing", "top-web-vulnerabilities", "linux-privilege-escalation", "cloud-penetration-testing", "security-auditor", "vulnerability-scanner"]
+    },
+    {
+      "id": "security-developer",
+      "name": "Security Developer",
+      "description": "Secure apps: API security, auth, PCI.",
+      "skillIds": ["api-security-best-practices", "auth-implementation-patterns", "backend-security-coder", "frontend-security-coder", "cc-skill-security-review", "pci-compliance"]
+    },
+    {
+      "id": "agent-architect",
+      "name": "Agent Architect",
+      "description": "AI agents, RAG, MCP, LangGraph.",
+      "skillIds": ["agent-evaluation", "langgraph", "mcp-builder", "prompt-engineering", "ai-agents-architect", "rag-engineer"]
+    },
+    {
+      "id": "python-pro",
+      "name": "Python Pro",
+      "description": "Python, FastAPI, Django, pytest.",
+      "skillIds": ["python-pro", "python-patterns", "fastapi-pro", "fastapi-templates", "django-pro", "python-testing-patterns", "async-python-patterns"]
+    },
+    {
+      "id": "startup-founder",
+      "name": "Startup Founder",
+      "description": "Product, competition, launch, copy, payments.",
+      "skillIds": ["product-manager-toolkit", "competitive-landscape", "competitor-alternatives", "launch-strategy", "copywriting", "stripe-integration"]
+    }
+  ]
+}

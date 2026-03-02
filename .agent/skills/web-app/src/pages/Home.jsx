@@ -1,43 +1,52 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { AlertCircle, ArrowRight, Book, Calendar, ChevronRight, Filter, FolderOpen, LayoutGrid, Menu, Search, Star, X } from 'lucide-react';
+import { AlertCircle, ArrowRight, Book, Calendar, Check, ChevronRight, Copy, Filter, FolderOpen, LayoutGrid, Menu, Search, Star, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { applyDisplayCategories, formatCategoryLabel } from '../lib/categorize';
 import { supabase } from '../lib/supabase';
 import { useAppStore } from '../store/useAppStore';
 
+const SEARCH_SUGGESTIONS = ['react', 'security', 'python', 'design', 'testing', 'API', 'AI', 'accessibility'];
+
 export function Home() {
     const [skills, setSkills] = useState([]);
     const [filteredSkills, setFilteredSkills] = useState([]);
     const [search, setSearch] = useState('');
     const [categoryFilter, setCategoryFilter] = useState('all');
+    const [bundleFilter, setBundleFilter] = useState(null);
+    const [roleBundles, setRoleBundles] = useState([]);
     const [loading, setLoading] = useState(true);
     const [displayCount, setDisplayCount] = useState(24);
     const [stars, setStars] = useState({});
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [copiedId, setCopiedId] = useState(null);
     const toggleStar = useAppStore((s) => s.toggleStar);
     const starredSkillIds = useAppStore((s) => s.starredSkillIds);
 
     useEffect(() => {
         const fetchSkillsAndStars = async () => {
             try {
-                const res = await fetch('/skills.json');
-                const data = await res.json();
+                const [skillsRes, bundlesRes] = await Promise.all([
+                    fetch('/skills.json'),
+                    fetch('/role-bundles.json').catch(() => null),
+                ]);
+                const data = await skillsRes.json();
                 applyDisplayCategories(data);
-
                 setSkills(data);
                 setFilteredSkills(data);
+
+                if (bundlesRes && bundlesRes.ok) {
+                    const { bundles } = await bundlesRes.json();
+                    setRoleBundles(bundles || []);
+                }
 
                 if (supabase) {
                     const { data: starData, error } = await supabase
                         .from('skill_stars')
                         .select('skill_id, star_count');
-
                     if (!error && starData) {
                         const starMap = {};
-                        starData.forEach(item => {
-                            starMap[item.skill_id] = item.star_count;
-                        });
+                        starData.forEach(item => { starMap[item.skill_id] = item.star_count; });
                         setStars(starMap);
                     }
                 }
@@ -47,9 +56,18 @@ export function Home() {
                 setLoading(false);
             }
         };
-
         fetchSkillsAndStars();
     }, []);
+
+    const handleCopySkill = (e, skill) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const text = `Use @${skill.name}`;
+        navigator.clipboard.writeText(text).then(() => {
+            setCopiedId(skill.id);
+            setTimeout(() => setCopiedId(null), 2000);
+        });
+    };
 
     const handleStarClick = async (e, skillId) => {
         e.preventDefault();
@@ -125,12 +143,20 @@ export function Home() {
             result = result.filter(skill => (skill.displayCategory || skill.category) === categoryFilter);
         }
 
+        if (bundleFilter) {
+            const bundle = roleBundles.find(b => b.id === bundleFilter);
+            if (bundle && bundle.skillIds) {
+                const idSet = new Set(bundle.skillIds);
+                result = result.filter(skill => idSet.has(skill.id));
+            }
+        }
+
         setFilteredSkills(result);
-    }, [search, categoryFilter, skills, starredSkillIds]);
+    }, [search, categoryFilter, bundleFilter, roleBundles, skills, starredSkillIds]);
 
     useEffect(() => {
         setDisplayCount(24);
-    }, [search, categoryFilter]);
+    }, [search, categoryFilter, bundleFilter]);
 
     const categoryStats = {};
     skills.forEach(skill => {
@@ -285,10 +311,44 @@ export function Home() {
                     <p className="text-[var(--text-muted)]">
                         {categoryFilter === 'favorites'
                             ? (favoritesCount === 0 ? 'Star skills to see them here.' : `Showing ${filteredSkills.length} starred skill${filteredSkills.length !== 1 ? 's' : ''}.`)
-                            : search || categoryFilter !== 'all'
+                            : search || categoryFilter !== 'all' || bundleFilter
                                 ? `Showing ${filteredSkills.length} of ${skills.length} skills`
                                 : `Discover ${skills.length} agentic capabilities for your AI assistant.`}
                     </p>
+
+                    {/* Role bundles: "What are you doing?" */}
+                    {!loading && roleBundles.length > 0 && !search && categoryFilter === 'all' && (
+                        <div className="mt-4 rounded-xl border border-[var(--glass-border)] bg-[var(--surface)]/60 p-4 glass">
+                            <p className="mb-3 text-sm font-medium text-[var(--text)]">What are you doing?</p>
+                            <div className="flex flex-wrap gap-2">
+                                {roleBundles.map((b) => (
+                                    <button
+                                        key={b.id}
+                                        type="button"
+                                        onClick={() => setBundleFilter(bundleFilter === b.id ? null : b.id)}
+                                        className={`rounded-lg border px-3 py-2 text-left text-sm transition-colors ${
+                                            bundleFilter === b.id
+                                                ? 'border-[var(--focus-ring)] bg-[var(--surface-elevated)] font-medium text-[var(--text)] ring-1 ring-[var(--focus-ring)]/30'
+                                                : 'border-[var(--border)] bg-[var(--page)] text-[var(--text-secondary)] hover:border-[var(--border)] hover:bg-[var(--surface-hover)] hover:text-[var(--text)]'
+                                        }`}
+                                        title={b.description}
+                                    >
+                                        <span className="font-medium">{b.name}</span>
+                                        <span className="ml-1.5 text-xs text-[var(--text-muted)]">({b.skillIds?.length || 0})</span>
+                                    </button>
+                                ))}
+                                {bundleFilter && (
+                                    <button
+                                        type="button"
+                                        onClick={() => setBundleFilter(null)}
+                                        className="rounded-lg border border-[var(--border)] bg-[var(--page)] px-3 py-2 text-sm text-[var(--text-muted)] transition-colors hover:bg-[var(--surface-hover)] hover:text-[var(--text)]"
+                                    >
+                                        Clear role
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="sticky top-20 z-30 flex flex-col gap-4 rounded-xl border border-[var(--glass-border)] p-4 glass shadow-[var(--shadow-card)] md:flex-row md:items-center">
@@ -322,6 +382,12 @@ export function Home() {
                         {formatCategoryLabel(categoryFilter)}
                     </button>
                 </div>
+                <div className="mt-2 flex flex-wrap items-center gap-x-1 gap-y-1 text-xs text-[var(--text-muted)]">
+                    <span className="shrink-0">Try:</span>
+                    {SEARCH_SUGGESTIONS.map((term) => (
+                        <button key={term} type="button" onClick={() => setSearch(term)} className="rounded px-2 py-1 font-medium hover:bg-[var(--surface-hover)] hover:text-[var(--text)]">{term}</button>
+                    ))}
+                </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                 <AnimatePresence>
@@ -335,6 +401,7 @@ export function Home() {
                             <AlertCircle className="mx-auto h-12 w-12 text-[var(--text-muted)]" />
                             <h3 className="mt-4 text-lg font-semibold text-[var(--text)]">No skills found</h3>
                             <p className="mt-2 text-[var(--text-muted)]">Try adjusting your search or filter.</p>
+                            <p className="mt-1 text-sm text-[var(--text-muted)]">Use a broader term (e.g. &quot;react&quot; instead of &quot;react hooks&quot;) or pick a role above.</p>
                         </div>
                     ) : (
                         filteredSkills.slice(0, displayCount).map((skill) => (
@@ -348,45 +415,80 @@ export function Home() {
                             >
                                 <Link
                                     to={`/skill/${skill.id}`}
-                                    className="group z-0 flex h-full flex-col rounded-lg border border-[var(--glass-border)] p-6 shadow-[var(--shadow-card)] transition-all glass-card hover:bg-[var(--surface-hover)]/80"
+                                    className="group flex h-full min-h-[280px] flex-col rounded-xl border border-[var(--glass-border)] bg-[var(--glass-card-bg)] p-5 shadow-[var(--shadow-card)] backdrop-blur-[var(--glass-blur)] transition-all hover:border-[var(--border)] hover:bg-[var(--surface-hover)]/80 sm:p-6"
                                 >
-                                    <div className="mb-4 flex items-center justify-between gap-3">
-                                        <div className="flex min-w-0 items-center gap-2">
-                                            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[var(--surface-subtle)]">
-                                                <Book className="h-5 w-5 text-[var(--text-secondary)]" aria-hidden />
+                                    {/* Row 1: Category (labeled) | Star */}
+                                    <div className="flex items-center justify-between gap-3">
+                                        <div className="flex min-w-0 flex-1 items-center gap-2">
+                                            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--surface-subtle)] text-[var(--text-secondary)]">
+                                                <Book className="h-4 w-4 shrink-0" aria-hidden />
                                             </div>
-                                            <span className="truncate rounded-full bg-[var(--surface-elevated)] px-2 py-1 text-xs font-medium text-[var(--text-secondary)]">
-                                                {formatCategoryLabel(skill.displayCategory || skill.category)}
-                                            </span>
+                                            <div className="min-w-0">
+                                                <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Category</span>
+                                                <span className="truncate block rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-medium leading-tight text-[var(--text-secondary)]">
+                                                    {formatCategoryLabel(skill.displayCategory || skill.category)}
+                                                </span>
+                                            </div>
                                         </div>
                                         <button
                                             onClick={(e) => handleStarClick(e, skill.id)}
-                                            className="z-10 flex shrink-0 items-center gap-1 rounded-md border border-[var(--border)] bg-[var(--surface-elevated)] px-2 py-1 text-[var(--text-muted)] transition-colors hover:bg-[var(--surface-hover)]"
+                                            className="flex min-w-[56px] shrink-0 items-center justify-end gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface-elevated)] px-2 py-1.5 text-[var(--text-muted)] transition-colors hover:bg-[var(--surface-hover)]"
                                             title="Upvote skill"
                                             aria-label="Upvote skill"
                                         >
                                             <Star className={`h-4 w-4 shrink-0 ${starredSkillIds[skill.id] ? 'fill-[var(--star-selected)] stroke-[var(--star-selected)]' : 'fill-none stroke-[var(--star-unselected)]'}`} aria-hidden />
-                                            <span className="text-xs font-semibold tabular-nums">{stars[skill.id] || 0}</span>
+                                            <span className="text-xs font-semibold tabular-nums leading-none">{stars[skill.id] ?? 0}</span>
                                         </button>
                                     </div>
 
-                                    <h3 className="mb-2 line-clamp-1 text-lg font-bold text-[var(--text)] transition-opacity group-hover:opacity-90">
-                                        @{skill.name}
-                                    </h3>
-
-                                    <p className="mb-4 flex-grow line-clamp-3 text-sm text-[var(--text-muted)]">
-                                        {skill.description}
-                                    </p>
-
-                                    <div className="mb-3 flex items-center justify-between gap-2 border-b border-[var(--border)] pb-3 text-xs text-[var(--text-muted)]">
-                                        <span>Risk: <span className="font-semibold text-[var(--text-secondary)]">{skill.risk || 'unknown'}</span></span>
-                                        {skill.date_added && (
-                                            <span className="inline-flex shrink-0 items-center gap-1"><Calendar className="h-3.5 w-3.5 shrink-0 text-[var(--text-muted)]" aria-hidden />{skill.date_added}</span>
-                                        )}
+                                    {/* Row 2: Skill name (what to type) */}
+                                    <div className="mt-4">
+                                        <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Skill</span>
+                                        <h3 className="mt-0.5 line-clamp-1 text-left text-lg font-bold leading-tight text-[var(--text)] transition-opacity group-hover:opacity-90">
+                                            @{skill.name}
+                                        </h3>
                                     </div>
 
-                                    <div className="mt-auto flex items-center pt-2 text-sm font-medium text-[var(--text-secondary)] transition-all group-hover:translate-x-1 group-hover:text-[var(--text)]">
-                                        Read Skill <ArrowRight className="ml-1 h-4 w-4 shrink-0" aria-hidden />
+                                    {/* Row 3: What it does (description) */}
+                                    <div className="mt-3 min-h-[2.5rem] flex-1">
+                                        <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">What it does</span>
+                                        <p className="mt-0.5 text-left text-sm leading-snug text-[var(--text-secondary)] line-clamp-2">
+                                            {skill.description}
+                                        </p>
+                                    </div>
+
+                                    {/* Row 4: Meta (risk + date) — labeled */}
+                                    <div className="mt-4 flex items-center justify-between gap-3 border-t border-[var(--border)] pt-3 text-left text-xs">
+                                        <div>
+                                            <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Risk</span>
+                                            <span className="font-semibold text-[var(--text-secondary)]">{skill.risk || 'unknown'}</span>
+                                        </div>
+                                        {skill.date_added ? (
+                                            <div className="text-right">
+                                                <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Added</span>
+                                                <span className="inline-flex shrink-0 items-center gap-1.5 font-medium text-[var(--text-secondary)]">
+                                                    <Calendar className="h-3.5 w-3.5 shrink-0" aria-hidden />
+                                                    {skill.date_added}
+                                                </span>
+                                            </div>
+                                        ) : <span className="shrink-0" aria-hidden />}
+                                    </div>
+
+                                    {/* Row 5: Actions */}
+                                    <div className="mt-3 flex items-center justify-between gap-3">
+                                        <button
+                                            type="button"
+                                            onClick={(e) => handleCopySkill(e, skill)}
+                                            className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface-elevated)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)] transition-colors hover:bg-[var(--surface-hover)] hover:text-[var(--text)]"
+                                            title={`Copy Use @${skill.name}`}
+                                            aria-label={`Copy @${skill.name}`}
+                                        >
+                                            {copiedId === skill.id ? <Check className="h-3.5 w-3.5 shrink-0 text-[var(--focus-ring)]" aria-hidden /> : <Copy className="h-3.5 w-3.5 shrink-0" aria-hidden />}
+                                            <span>{copiedId === skill.id ? 'Copied!' : 'Copy @name'}</span>
+                                        </button>
+                                        <span className="inline-flex shrink-0 items-center text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--text)]">
+                                            Read full <ArrowRight className="ml-0.5 h-4 w-4 shrink-0" aria-hidden />
+                                        </span>
                                     </div>
                                 </Link>
                             </motion.div>

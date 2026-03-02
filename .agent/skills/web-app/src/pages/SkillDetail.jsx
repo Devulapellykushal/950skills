@@ -165,19 +165,29 @@ export function SkillDetail() {
                     <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                         <div className="min-w-0 flex-1">
                             <div className="mb-3 flex flex-wrap items-center gap-2">
+                                <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Category</span>
                                 <span className="rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-[var(--text-secondary)]">
                                     {formatCategoryLabel(skill.displayCategory || skill.category)}
                                 </span>
                                 {skill.source && (
-                                    <span className="rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--text-secondary)]">
-                                        {skill.source}
-                                    </span>
+                                    <>
+                                        <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Source</span>
+                                        <span className="rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--text-secondary)]">
+                                            {skill.source}
+                                        </span>
+                                    </>
                                 )}
                                 {skill.date_added && (
                                     <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--text-muted)]">
                                         <Calendar className="h-3.5 w-3.5 shrink-0" aria-hidden />
                                         Added {skill.date_added}
                                     </span>
+                                )}
+                                {skill.risk && (
+                                    <>
+                                        <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Risk</span>
+                                        <span className="rounded-full bg-[var(--surface-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--text-secondary)]">{skill.risk}</span>
+                                    </>
                                 )}
                                 <button
                                     type="button"
@@ -189,10 +199,12 @@ export function SkillDetail() {
                                     <span>{starCount} Upvotes</span>
                                 </button>
                             </div>
-                            <h1 className="text-3xl font-extrabold tracking-tight text-[var(--text)] sm:text-4xl">
+                            <span className="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">Skill</span>
+                            <h1 className="mt-0.5 text-3xl font-extrabold tracking-tight text-[var(--text)] sm:text-4xl">
                                 @{skill.name}
                             </h1>
-                            <p className="mt-2 text-lg text-[var(--text-secondary)]">
+                            <span className="mt-4 block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">What it does</span>
+                            <p className="mt-0.5 text-lg text-[var(--text-secondary)]">
                                 {skill.description}
                             </p>
                         </div>

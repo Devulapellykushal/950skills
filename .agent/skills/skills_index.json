@@ -140,6 +140,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "agent-memory-design",
+    "path": "skills/agent-memory-design",
+    "category": "uncategorized",
+    "name": "agent-memory-design",
+    "description": "Short-term and long-term memory for agents: context window, summarization, and retrieval.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "agent-memory-mcp",
     "path": "skills/agent-memory-mcp",
     "category": "uncategorized",
@@ -158,6 +168,16 @@
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "agent-observability",
+    "path": "skills/agent-observability",
+    "category": "uncategorized",
+    "name": "agent-observability",
+    "description": "Logging, tracing, and metrics for AI agents: token usage, latency, tool calls, and failures.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "agent-orchestration-improve-agent",
@@ -198,6 +218,16 @@
     "risk": "unknown",
     "source": "agentfolio.io",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "agentic-workflow-design",
+    "path": "skills/agentic-workflow-design",
+    "category": "uncategorized",
+    "name": "agentic-workflow-design",
+    "description": "Design agentic flows: planning, tool use, multi-step reasoning, and error recovery.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "agents-v2-py",
@@ -608,6 +638,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "astro-patterns",
+    "path": "skills/astro-patterns",
+    "category": "uncategorized",
+    "name": "astro-patterns",
+    "description": "Astro islands, static vs server rendering, content collections, and integration with React/Vue/Svelte.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "async-python-patterns",
@@ -1980,6 +2020,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "backend-caching-strategies",
+    "path": "skills/backend-caching-strategies",
+    "category": "uncategorized",
+    "name": "backend-caching-strategies",
+    "description": "Cache-aside, write-through, TTL, invalidation, and when to use Redis or CDN for APIs.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "backend-dev-guidelines",
     "path": "skills/backend-dev-guidelines",
     "category": "uncategorized",
@@ -2008,6 +2058,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "background-jobs-patterns",
+    "path": "skills/background-jobs-patterns",
+    "category": "uncategorized",
+    "name": "background-jobs-patterns",
+    "description": "Job queues, retries, dead-letter, idempotency, and observability for async workers.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "backtesting-frameworks",
@@ -3040,6 +3100,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "container-security",
+    "path": "skills/container-security",
+    "category": "uncategorized",
+    "name": "container-security",
+    "description": "Container image scanning, base image choice, non-root user, runtime security, and Kubernetes pod hardening.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "content-creator",
     "path": "skills/content-creator",
     "category": "marketing",
@@ -3490,6 +3560,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "database-migrations-safe",
+    "path": "skills/database-migrations-safe",
+    "category": "uncategorized",
+    "name": "database-migrations-safe",
+    "description": "Zero-downtime migrations, expand-contract, backfills, and rollback strategy for schema changes.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "database-migrations-sql-migrations",
     "path": "skills/database-migrations-sql-migrations",
     "category": "uncategorized",
@@ -3745,6 +3825,16 @@
     "category": "uncategorized",
     "name": "design-to-code-translator",
     "description": "Act as Vercel Design Engineer. Convert design to production frontend: component hierarchy, props, state, copy-paste code, responsive, a11y, tokens, dark mode, testing.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "design-tokens-implementation",
+    "path": "skills/design-tokens-implementation",
+    "category": "uncategorized",
+    "name": "design-tokens-implementation",
+    "description": "Design tokens: colors, spacing, typography; format (JSON, CSS vars), build pipeline, and theming.",
     "risk": "safe",
     "source": "community",
     "date_added": null
@@ -4190,6 +4280,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "event-driven-backend",
+    "path": "skills/event-driven-backend",
+    "category": "uncategorized",
+    "name": "event-driven-backend",
+    "description": "Event sourcing, event bus design, at-least-once delivery, idempotent handlers, and schema evolution.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "event-sourcing-architect",
     "path": "skills/event-sourcing-architect",
     "category": "uncategorized",
@@ -4330,6 +4430,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "feature-flags-backend",
+    "path": "skills/feature-flags-backend",
+    "category": "uncategorized",
+    "name": "feature-flags-backend",
+    "description": "Feature flag storage, evaluation, targeting, and rollout; integration with config and experiments.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "ffuf-claude-skill",
     "path": "skills/ffuf-claude-skill",
     "category": "uncategorized",
@@ -4468,6 +4578,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "forms-accessible",
+    "path": "skills/forms-accessible",
+    "category": "uncategorized",
+    "name": "forms-accessible",
+    "description": "Accessible forms: labels, validation, errors, focus, and ARIA for all users and assistive tech.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "fp-ts-errors",
@@ -4698,6 +4818,16 @@
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "gdpr-compliance",
+    "path": "skills/gdpr-compliance",
+    "category": "uncategorized",
+    "name": "gdpr-compliance",
+    "description": "GDPR implementation: lawful basis, consent, data subject rights, DPIAs, breach notification, retention, and privacy by design.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "gdpr-data-handling",
@@ -5240,6 +5370,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "human-in-the-loop-agents",
+    "path": "skills/human-in-the-loop-agents",
+    "category": "uncategorized",
+    "name": "human-in-the-loop-agents",
+    "description": "Escalation, approval flows, and feedback loops for AI agents; when to ask and how to resume.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "hybrid-cloud-architect",
     "path": "skills/hybrid-cloud-architect",
     "category": "uncategorized",
@@ -5278,6 +5418,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "idempotency-api",
+    "path": "skills/idempotency-api",
+    "category": "uncategorized",
+    "name": "idempotency-api",
+    "description": "Idempotency keys for APIs, storage and TTL, request deduplication, and safe retries.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "idor-testing",
@@ -5330,6 +5480,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "incident-response-runbook",
+    "path": "skills/incident-response-runbook",
+    "category": "uncategorized",
+    "name": "incident-response-runbook",
+    "description": "Runbook structure, severity levels, comms, post-incident review, and linking to observability.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "incident-response-smart-fix",
     "path": "skills/incident-response-smart-fix",
     "category": "uncategorized",
@@ -5368,6 +5528,16 @@
     "risk": "safe",
     "source": "personal",
     "date_added": "2026-02-28"
+  },
+  {
+    "id": "injection-testing-comprehensive",
+    "path": "skills/injection-testing-comprehensive",
+    "category": "uncategorized",
+    "name": "injection-testing-comprehensive",
+    "description": "Test all injection types: SQL, NoSQL, command, LDAP, XSS, template (SSTI), XXE, CRLF, log, prompt; detection and mitigation.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "inngest",
@@ -6080,6 +6250,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "micro-frontends",
+    "path": "skills/micro-frontends",
+    "category": "uncategorized",
+    "name": "micro-frontends",
+    "description": "Micro-frontend architecture: composition, routing, shared dependencies, and team boundaries.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "micro-saas-launcher",
     "path": "skills/micro-saas-launcher",
     "category": "uncategorized",
@@ -6288,6 +6468,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "multi-agent-handoff",
+    "path": "skills/multi-agent-handoff",
+    "category": "uncategorized",
+    "name": "multi-agent-handoff",
+    "description": "Orchestrator patterns, handoff protocols, and shared context for multi-agent systems.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "multi-agent-patterns",
@@ -6680,6 +6870,26 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "owasp-api-security",
+    "path": "skills/owasp-api-security",
+    "category": "uncategorized",
+    "name": "owasp-api-security",
+    "description": "OWASP API Security Top 10: broken object level auth, broken auth, excessive data exposure, lack of resources, injection, misconfiguration.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "owasp-asvs",
+    "path": "skills/owasp-asvs",
+    "category": "uncategorized",
+    "name": "owasp-asvs",
+    "description": "OWASP ASVS: application security verification levels L1–L3, requirement mapping, and verification evidence for design and code.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "page-cro",
     "path": "skills/page-cro",
     "category": "uncategorized",
@@ -6808,6 +7018,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "performance-budget",
+    "path": "skills/performance-budget",
+    "category": "uncategorized",
+    "name": "performance-budget",
+    "description": "Performance budgets: bundle size, LCP, CLS; CI enforcement and regression alerts.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "performance-engineer",
@@ -7170,6 +7390,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "prompt-injection",
+    "path": "skills/prompt-injection",
+    "category": "uncategorized",
+    "name": "prompt-injection",
+    "description": "Detect and mitigate LLM prompt injection: instruction override, data exfiltration, privilege escalation, and safe prompt design.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "prompt-library",
     "path": "skills/prompt-library",
     "category": "uncategorized",
@@ -7188,6 +7418,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "pwa-offline",
+    "path": "skills/pwa-offline",
+    "category": "uncategorized",
+    "name": "pwa-offline",
+    "description": "Service worker, caching strategies, offline fallback, and installability for progressive web apps.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "pydantic-models-py",
@@ -7338,6 +7578,16 @@
     "risk": "safe",
     "source": "personal",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "rate-limiting-backend",
+    "path": "skills/rate-limiting-backend",
+    "category": "uncategorized",
+    "name": "rate-limiting-backend",
+    "description": "Token bucket, sliding window, per-user and per-IP limits, 429 responses, and backpressure.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "react-best-practices",
@@ -7740,6 +7990,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "secrets-detection",
+    "path": "skills/secrets-detection",
+    "category": "uncategorized",
+    "name": "secrets-detection",
+    "description": "Pre-commit and CI checks for leaked secrets (API keys, tokens), .env hygiene, and rotation guidance.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "secrets-management",
     "path": "skills/secrets-management",
     "category": "uncategorized",
@@ -7748,6 +8008,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "secure-sdlc",
+    "path": "skills/secure-sdlc",
+    "category": "uncategorized",
+    "name": "secure-sdlc",
+    "description": "Security touchpoints in the SDLC: threat modeling, secure design, secure code review, and security testing.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "security-audit",
@@ -7788,6 +8058,26 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "security-headers",
+    "path": "skills/security-headers",
+    "category": "uncategorized",
+    "name": "security-headers",
+    "description": "CSP, HSTS, X-Frame-Options, CORS, and secure cookie flags for web and API responses.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "security-logging-audit",
+    "path": "skills/security-logging-audit",
+    "category": "uncategorized",
+    "name": "security-logging-audit",
+    "description": "Audit logs, tamper resistance, retention, and what to log for auth and sensitive actions.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "security-requirement-extraction",
@@ -8240,6 +8530,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "soc2-compliance",
+    "path": "skills/soc2-compliance",
+    "category": "uncategorized",
+    "name": "soc2-compliance",
+    "description": "SOC 2 trust criteria: security, availability, processing integrity, confidentiality, privacy; control mapping and audit readiness.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "social-content",
     "path": "skills/social-content",
     "category": "uncategorized",
@@ -8258,6 +8558,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "solid-js-patterns",
+    "path": "skills/solid-js-patterns",
+    "category": "uncategorized",
+    "name": "solid-js-patterns",
+    "description": "Solid.js reactivity, signals, components, and patterns for fine-grained updates and small bundles.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "solidity-security",
@@ -8468,6 +8778,26 @@
     "risk": "safe",
     "source": "https://github.com/obra/superpowers-lab",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "supply-chain-security",
+    "path": "skills/supply-chain-security",
+    "category": "uncategorized",
+    "name": "supply-chain-security",
+    "description": "SBOM generation, dependency and container image signing, vulnerability scanning in CI, and attestations for secure supply chain.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
+    "id": "svelte-patterns",
+    "path": "skills/svelte-patterns",
+    "category": "uncategorized",
+    "name": "svelte-patterns",
+    "description": "Svelte 4/5 reactivity, stores, actions, and component patterns for lean bundles and clear code.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "swiftui-expert-skill",
@@ -8848,6 +9178,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "tool-calling-patterns",
+    "path": "skills/tool-calling-patterns",
+    "category": "uncategorized",
+    "name": "tool-calling-patterns",
+    "description": "Tool schema design, parameter validation, streaming tool calls, and error handling for LLM agents.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "tool-design",
@@ -9248,6 +9588,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "vue-patterns",
+    "path": "skills/vue-patterns",
+    "category": "uncategorized",
+    "name": "vue-patterns",
+    "description": "Vue 3 Composition API, reactivity, composables, Pinia, and best practices for components and routing.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
   },
   {
     "id": "vulnerability-scanner",
